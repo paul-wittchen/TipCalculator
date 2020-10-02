@@ -20,14 +20,23 @@ class ViewController: UIViewController {
     @IBOutlet weak var amountLabel: UILabel!
     @IBOutlet weak var amountPerPersonLabel: UILabel!
     
+    var foodCost = 0.0
+    var tipPercent = 0.0
+    var tip = 0.0
+    var costTotal = 0.0
+    var costPerPerson = 0.0
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        
     }
 
     @IBAction func procentSliderAction(_ sender: UISlider) {
         let procentAsString = String(format: "%.0f", sender.value)
         procentLabel.text = procentAsString + "%"
+        
+        calculation()
     }
     
     @IBAction func procentButtonAction(_ sender: UIButton) {
@@ -41,6 +50,37 @@ class ViewController: UIViewController {
             procentSlider.value = 15.0
             procentLabel.text = "15%"
         }
+    }
+    
+    func calculation(){
+        
+        if !(amountTextField.text!.isEmpty) && !(amountPeopleTextField.text!.isEmpty) {
+            foodCost = Double(amountTextField.text!)!
+            tipPercent = Double(procentSlider.value)
+            
+            tip = (foodCost * tipPercent) / 100
+            costTotal = foodCost + tip
+            
+            costPerPerson = costTotal / Double(amountPeopleTextField.text!)!
+            
+            print(tip)
+            print(costTotal)
+            print(costPerPerson)
+            
+        } else {
+            notification(msg: "Please provide the cost and the amount of persons")
+        }
+        
+    }
+    
+    func notification(msg: String) {
+        let alert = UIAlertController(title: "Oh no...", message: msg, preferredStyle: .alert)
+        
+        let action1 = UIAlertAction(title: "OK", style: .default){ (action) in}
+        
+        alert.addAction(action1)
+        
+        self.present(alert, animated: true, completion: nil)
     }
     
 }
