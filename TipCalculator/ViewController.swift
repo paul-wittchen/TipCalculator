@@ -29,17 +29,22 @@ class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        
     }
-
-    @IBAction func procentSliderAction(_ sender: UISlider) {
+    
+    override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        view.endEditing(true)
+    }
+    
+    // MAIN FUNCTION
+    @IBAction func procentSliderAction(_ sender: UISlider){
         let procentAsString = String(format: "%.0f", sender.value)
         procentLabel.text = procentAsString + "%"
         
         calculation()
+        
     }
     
-    @IBAction func procentButtonAction(_ sender: UIButton) {
+    @IBAction func procentButtonAction(_ sender: UIButton){
         if sender.titleLabel?.text == "5%" {
             procentSlider.value = 5.0
             procentLabel.text = "5%"
@@ -50,10 +55,11 @@ class ViewController: UIViewController {
             procentSlider.value = 15.0
             procentLabel.text = "15%"
         }
+        
+        calculation()
     }
     
     func calculation(){
-        
         if !(amountTextField.text!.isEmpty) && !(amountPeopleTextField.text!.isEmpty) {
             foodCost = Double(amountTextField.text!)!
             tipPercent = Double(procentSlider.value)
@@ -63,9 +69,7 @@ class ViewController: UIViewController {
             
             costPerPerson = costTotal / Double(amountPeopleTextField.text!)!
             
-            print(tip)
-            print(costTotal)
-            print(costPerPerson)
+            printUIElements()
             
         } else {
             notification(msg: "Please provide the cost and the amount of persons")
@@ -73,7 +77,7 @@ class ViewController: UIViewController {
         
     }
     
-    func notification(msg: String) {
+    func notification(msg: String){
         let alert = UIAlertController(title: "Oh no...", message: msg, preferredStyle: .alert)
         
         let action1 = UIAlertAction(title: "OK", style: .default){ (action) in}
@@ -81,6 +85,17 @@ class ViewController: UIViewController {
         alert.addAction(action1)
         
         self.present(alert, animated: true, completion: nil)
+    }
+    
+    func printUIElements(){
+        let stringTip = String(format: "%.2f", tip)
+        let stringCostTotal = String(format: "%.2f", costTotal)
+        let stringCostPerPerson = String(format: "%.2f", costPerPerson)
+        
+        tipLabel.text = "Tip: " + stringTip + "€"
+        amountLabel.text = "Amount: " + stringCostTotal + "€"
+        amountPerPersonLabel.text = "Amount per person: " + stringCostPerPerson + "€"
+        
     }
     
 }
