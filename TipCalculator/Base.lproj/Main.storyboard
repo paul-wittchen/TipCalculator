@@ -67,6 +67,9 @@
                                 <rect key="frame" x="31" y="394" width="352" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
+                                <connections>
+                                    <action selector="procentSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ltf-QA-lRp"/>
+                                </connections>
                             </slider>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSo-B6-De1">
                                 <rect key="frame" x="71" y="460" width="65" height="65"/>
@@ -75,6 +78,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="5%"/>
+                                <connections>
+                                    <action selector="procentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gut-py-LwW"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3k-Nt-71F">
                                 <rect key="frame" x="175" y="460" width="65" height="65"/>
@@ -83,6 +89,9 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="10%"/>
+                                <connections>
+                                    <action selector="procentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIh-vS-rc5"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2B-eD-wyw">
                                 <rect key="frame" x="279" y="460" width="65" height="65"/>
@@ -91,11 +100,23 @@
                                 <fontDescription key="fontDescription" type="system" pointSize="24"/>
                                 <color key="tintColor" systemColor="systemBackgroundColor"/>
                                 <state key="normal" title="15%"/>
+                                <connections>
+                                    <action selector="procentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CS-Fv-SV9"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     </view>
+                    <connections>
+                        <outlet property="amountLabel" destination="VAg-Aa-sR8" id="HFr-U0-JGj"/>
+                        <outlet property="amountPeopleTextField" destination="tcI-Oy-TCD" id="nsT-ZK-LYX"/>
+                        <outlet property="amountPerPersonLabel" destination="KgZ-1L-E5N" id="R9Q-H2-9fG"/>
+                        <outlet property="amountTextField" destination="z9N-zk-fzo" id="zQn-Bo-tAu"/>
+                        <outlet property="procentLabel" destination="wE8-of-W1d" id="Aw1-Wj-T5i"/>
+                        <outlet property="procentSlider" destination="gNd-7y-LHX" id="HSx-Nu-O4O"/>
+                        <outlet property="tipLabel" destination="gdl-nJ-DZV" id="XGD-CS-WQ9"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
