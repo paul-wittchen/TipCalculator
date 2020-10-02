@@ -26,11 +26,21 @@ class ViewController: UIViewController {
     }
 
     @IBAction func procentSliderAction(_ sender: UISlider) {
-        
+        let procentAsString = String(format: "%.0f", sender.value)
+        procentLabel.text = procentAsString + "%"
     }
     
     @IBAction func procentButtonAction(_ sender: UIButton) {
-        
+        if sender.titleLabel?.text == "5%" {
+            procentSlider.value = 5.0
+            procentLabel.text = "5%"
+        } else if sender.titleLabel?.text == "10%" {
+            procentSlider.value = 10.0
+            procentLabel.text = "10%"
+        } else {
+            procentSlider.value = 15.0
+            procentLabel.text = "15%"
+        }
     }
     
 }
