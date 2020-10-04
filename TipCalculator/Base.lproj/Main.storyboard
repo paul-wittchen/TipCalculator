@@ -16,97 +16,127 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Calculate your tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPf-vJ-FfW">
-                                <rect key="frame" x="59" y="74" width="296" height="64"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="40"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Calculate your tip" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GPf-vJ-FfW">
+                                <rect key="frame" x="60" y="60" width="294" height="51.5"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Bold" family="Noteworthy" pointSize="32"/>
                                 <color key="textColor" systemColor="systemOrangeColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z9N-zk-fzo">
-                                <rect key="frame" x="106" y="201" width="203" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter the amount" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="z9N-zk-fzo">
+                                <rect key="frame" x="80" y="142.5" width="254" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
                             </textField>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount of people" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcI-Oy-TCD">
-                                <rect key="frame" x="106" y="251" width="203" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Amount of people" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tcI-Oy-TCD">
+                                <rect key="frame" x="80" y="192.5" width="254" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdl-nJ-DZV">
-                                <rect key="frame" x="73" y="573" width="271" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Tip:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gdl-nJ-DZV">
+                                <rect key="frame" x="72" y="535.5" width="270" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAg-Aa-sR8">
-                                <rect key="frame" x="73" y="613" width="271" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="VAg-Aa-sR8">
+                                <rect key="frame" x="72" y="572" width="270" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Amount per person:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgZ-1L-E5N">
-                                <rect key="frame" x="73" y="651" width="271" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Amount per person:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KgZ-1L-E5N">
+                                <rect key="frame" x="72" y="608.5" width="270" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="gNd-7y-LHX">
-                                <rect key="frame" x="31" y="394" width="352" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1" minValue="0.0" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="gNd-7y-LHX">
+                                <rect key="frame" x="30" y="351.5" width="354" height="31"/>
                                 <color key="tintColor" systemColor="systemOrangeColor"/>
                                 <connections>
                                     <action selector="procentSliderAction:" destination="BYZ-38-t0r" eventType="valueChanged" id="ltf-QA-lRp"/>
                                 </connections>
                             </slider>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSo-B6-De1">
-                                <rect key="frame" x="71" y="460" width="65" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
-                                <state key="normal" title="5%"/>
-                                <connections>
-                                    <action selector="procentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gut-py-LwW"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3k-Nt-71F">
-                                <rect key="frame" x="175" y="460" width="65" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
-                                <state key="normal" title="10%"/>
-                                <connections>
-                                    <action selector="procentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIh-vS-rc5"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2B-eD-wyw">
-                                <rect key="frame" x="279" y="460" width="65" height="65"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="24"/>
-                                <color key="tintColor" systemColor="systemBackgroundColor"/>
-                                <state key="normal" title="15%"/>
-                                <connections>
-                                    <action selector="procentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CS-Fv-SV9"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="5%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wE8-of-W1d">
-                                <rect key="frame" x="169" y="329" width="77" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5%" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wE8-of-W1d">
+                                <rect key="frame" x="120" y="282.5" width="174" height="37"/>
+                                <fontDescription key="fontDescription" name="Noteworthy-Light" family="Noteworthy" pointSize="23"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="jgQ-dB-woY">
+                                <rect key="frame" x="104" y="442" width="206" height="41"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BSo-B6-De1">
+                                        <rect key="frame" x="0.0" y="0.0" width="34" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="5%"/>
+                                        <connections>
+                                            <action selector="procentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gut-py-LwW"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s3k-Nt-71F">
+                                        <rect key="frame" x="74" y="0.0" width="46" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="10%"/>
+                                        <connections>
+                                            <action selector="procentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="fIh-vS-rc5"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W2B-eD-wyw">
+                                        <rect key="frame" x="160" y="0.0" width="46" height="41"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                        <color key="tintColor" systemColor="systemBackgroundColor"/>
+                                        <state key="normal" title="15%"/>
+                                        <connections>
+                                            <action selector="procentButtonAction:" destination="BYZ-38-t0r" eventType="touchUpInside" id="6CS-Fv-SV9"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="z9N-zk-fzo" firstAttribute="top" secondItem="GPf-vJ-FfW" secondAttribute="bottom" constant="34" id="0Vi-ZW-bKc"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gNd-7y-LHX" secondAttribute="trailing" constant="32" id="1LG-vg-cOh"/>
+                            <constraint firstItem="GPf-vJ-FfW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="60" id="1zG-tA-TTg"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tcI-Oy-TCD" secondAttribute="trailing" constant="80" id="8cE-9q-Cbq"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VAg-Aa-sR8" secondAttribute="trailing" constant="72" id="97D-5w-tRY"/>
+                            <constraint firstItem="gdl-nJ-DZV" firstAttribute="top" secondItem="jgQ-dB-woY" secondAttribute="bottom" constant="52.5" id="9gb-1u-MlG"/>
+                            <constraint firstItem="gNd-7y-LHX" firstAttribute="top" secondItem="wE8-of-W1d" secondAttribute="bottom" constant="32" id="DFt-8d-7j8"/>
+                            <constraint firstItem="KgZ-1L-E5N" firstAttribute="top" secondItem="VAg-Aa-sR8" secondAttribute="bottom" constant="16" id="G1n-XJ-FIp"/>
+                            <constraint firstItem="GPf-vJ-FfW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="16" id="H9J-sK-LQN"/>
+                            <constraint firstItem="jgQ-dB-woY" firstAttribute="top" secondItem="gNd-7y-LHX" secondAttribute="bottom" constant="60.5" id="IFu-JE-Rz4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="z9N-zk-fzo" secondAttribute="trailing" constant="80" id="NLM-og-SbP"/>
+                            <constraint firstItem="KgZ-1L-E5N" firstAttribute="top" secondItem="VAg-Aa-sR8" secondAttribute="bottom" constant="16" id="Pfv-OP-Y19"/>
+                            <constraint firstItem="gdl-nJ-DZV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="QAQ-wa-b3n"/>
+                            <constraint firstItem="z9N-zk-fzo" firstAttribute="top" secondItem="GPf-vJ-FfW" secondAttribute="bottom" constant="31" id="SUl-eC-Pcf"/>
+                            <constraint firstItem="z9N-zk-fzo" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="SdZ-mP-PfS"/>
+                            <constraint firstItem="wE8-of-W1d" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="120" id="Sni-iV-m8X"/>
+                            <constraint firstItem="KgZ-1L-E5N" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="UaR-d2-c5G"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="KgZ-1L-E5N" secondAttribute="trailing" constant="72" id="V6V-qM-R9P"/>
+                            <constraint firstItem="tcI-Oy-TCD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="W7N-HU-J4w"/>
+                            <constraint firstItem="gNd-7y-LHX" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="32" id="Wgl-cm-C24"/>
+                            <constraint firstItem="VAg-Aa-sR8" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="72" id="XQ6-5K-JJw"/>
+                            <constraint firstItem="jgQ-dB-woY" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="104" id="YOR-qX-6Uv"/>
+                            <constraint firstItem="VAg-Aa-sR8" firstAttribute="top" secondItem="gdl-nJ-DZV" secondAttribute="bottom" constant="16" id="aYn-MC-zcG"/>
+                            <constraint firstItem="tcI-Oy-TCD" firstAttribute="top" secondItem="z9N-zk-fzo" secondAttribute="bottom" constant="16" id="aoK-W8-yxa"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="GPf-vJ-FfW" secondAttribute="trailing" constant="60" id="bcl-MC-auh"/>
+                            <constraint firstItem="wE8-of-W1d" firstAttribute="top" secondItem="tcI-Oy-TCD" secondAttribute="bottom" constant="56" id="bh2-lq-rca"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gdl-nJ-DZV" secondAttribute="trailing" constant="72" id="fQO-ap-Wny"/>
+                            <constraint firstItem="gNd-7y-LHX" firstAttribute="top" secondItem="wE8-of-W1d" secondAttribute="bottom" constant="32" id="g5a-bz-jlk"/>
+                            <constraint firstItem="tcI-Oy-TCD" firstAttribute="top" secondItem="z9N-zk-fzo" secondAttribute="bottom" constant="16" id="iX1-3s-oqK"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="jgQ-dB-woY" secondAttribute="trailing" constant="104" id="opT-5N-E0J"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="wE8-of-W1d" secondAttribute="trailing" constant="120" id="qp1-Og-gon"/>
+                            <constraint firstItem="wE8-of-W1d" firstAttribute="top" secondItem="tcI-Oy-TCD" secondAttribute="bottom" constant="56" id="sJE-ih-eIA"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="KgZ-1L-E5N" secondAttribute="bottom" constant="233" id="tcs-9H-d1O"/>
+                            <constraint firstItem="VAg-Aa-sR8" firstAttribute="top" secondItem="gdl-nJ-DZV" secondAttribute="bottom" constant="16" id="yBb-6j-4w5"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="amountLabel" destination="VAg-Aa-sR8" id="HFr-U0-JGj"/>
